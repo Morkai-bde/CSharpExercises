@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Fuckthis.Excercises;
+using Exercises.Exercises;
 
 namespace Excercises
 {
@@ -11,8 +11,10 @@ namespace Excercises
     {
         static void Main(string[] args)
         {
-            var exerciseHandler = new ExerciseHandler();
-            Environment.Exit(0);
-        }       
+            // var exerciseHandler = new ExerciseHandler();
+            var unitsExercise = new UnitsExercise();
+
+            // Environment.Exit(0);
+        }
     }
 }

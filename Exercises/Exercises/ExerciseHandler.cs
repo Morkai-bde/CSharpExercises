@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Fuckthis.Excercises
+namespace Exercises.Exercises
 {
     internal class ExerciseHandler
     {

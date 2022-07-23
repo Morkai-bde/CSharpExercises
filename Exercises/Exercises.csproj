@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Exercises\ControlFlow.cs" />
     <Compile Include="Exercises\ExerciseHandler.cs" />
+    <Compile Include="Exercises\Units.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
