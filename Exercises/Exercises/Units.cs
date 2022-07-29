@@ -6,16 +6,36 @@ namespace Exercises.Exercises
     {
         public UnitsExercise()
         {
-            // var unit = new Unit("Iymbryl");
-            // var unit2 = new Unit("Althidon");
-            // unit2.Greeting();
+            var archer = new Archer("Iymbryl");
+            var archer2 = new Archer("Althidon");
             var footman = new Footman("Folen");
             var footman2 = new Footman("Cailu");
+            System.Threading.Thread.Sleep(1000);
             footman.Greeting();
+            System.Threading.Thread.Sleep(1000);
             footman.Attack(footman2);
-            Console.WriteLine(footman2.Health);
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine(footman2.Name + " - " + footman2.Health+"/"+"10");
+            System.Threading.Thread.Sleep(1000);
+            archer.Attack(footman);
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine(footman.Name + " - " + footman.Health + "/" + "10");
+            System.Threading.Thread.Sleep(1000);
+            archer2.Attack(footman);
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine(footman.Name + " - " + footman.Health + "/" + "10");
+            System.Threading.Thread.Sleep(1000);
             footman.Attack(footman2);
-            Console.WriteLine(footman2.Health);
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine(footman2.Name + " - " + footman2.Health + "/" + "10");
+            System.Threading.Thread.Sleep(1000);
+            archer.Attack(footman);
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine(footman.Name + " - " + footman.Health + "/" + "10");
+            System.Threading.Thread.Sleep(1000);
+            archer2.Attack(footman);
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine(footman.Name + " - " + footman.Health + "/" + "10");
         }
     }
     public abstract class Unit : IDisposable
@@ -25,7 +45,7 @@ namespace Exercises.Exercises
 
         public Unit(string name)
         {
-            Console.WriteLine("Unit Created");
+            Console.WriteLine(name + " Has entered combat");
             Name = name;
         }
         public void Greeting()
@@ -35,9 +55,10 @@ namespace Exercises.Exercises
 
         public void TakeDamage(int damage)
         {
-            Health = Health - damage;
+            Health -= damage;
             if (Health <= 0)
             {
+                Health = 0;
                 Dispose();
             }
         }
@@ -57,7 +78,21 @@ namespace Exercises.Exercises
         }
         public void Attack(Unit target)
         {
-            Console.WriteLine($"{Name} does {Damage} Damage to {target.Name}");
+            Console.WriteLine($"{Name} hits {target.Name} for {Damage} damage");
+            target.TakeDamage(Damage);
+        }
+    }
+    public class Archer : Unit
+    {
+        public int Damage { get; set; }
+        public Archer(string name) : base(name)
+        {
+            Damage = 3;
+            Health = 7;
+        }
+        public void Attack(Unit target)
+        {
+            Console.WriteLine($"{Name} shoots {target.Name} for {Damage} damage");
             target.TakeDamage(Damage);
         }
     }
