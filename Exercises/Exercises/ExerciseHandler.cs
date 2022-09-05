@@ -21,11 +21,40 @@ namespace Exercises.Exercises
             Console.Clear();
             Console.WriteLine("This Program does not capture errors or validates data entered as per the instructions of Excercises");
             Console.WriteLine();
-            Console.WriteLine("Choose an Exercise number between 1 and 9 or \"q\" to exit");
+            Console.WriteLine("1. Control Flow \n2. Arrays and Lists\n3. Working With Dates\n4. Working with Text\n5. Working With Files");
+            Console.WriteLine("Choose an Exercise Menu or \"q\" to exit");
         }
 
         private void HandleInput()
         {
+            switch (Console.ReadLine())
+            {
+                case "1":
+                    ControlFlowMenu();
+                    break;
+                case "2":
+                    ArraysAndListsMenu();
+                    break;
+                case "3":
+                    WorkingWithDatesMenu();
+                    break;
+                case "4":
+                    WorkingWithTextMenu();
+                    break;
+                case "5":
+                    WorkingWithFilesMenu();
+                    break;
+                case "q":
+                    canContinue = false;
+                    break;
+                default:
+                    break;
+            }
+        }
+        private void ControlFlowMenu()
+        {
+            Console.Clear();
+            Console.WriteLine("Choose an Excercise Number between 1 and 9 or \"q\" to quit");
             switch (Console.ReadLine())
             {
                 case "1":
@@ -54,6 +83,70 @@ namespace Exercises.Exercises
                     break;
                 case "9":
                     ControlFlow.ExerciseNine();
+                    break;
+                case "q":
+                    canContinue = false;
+                    break;
+                default:
+                    break;
+            }
+        }
+        private void ArraysAndListsMenu()
+        {
+            Console.Clear();
+            Console.WriteLine("This menu is empty press enter to go back or \"q\" to exit");
+            switch (Console.ReadLine())
+            {
+                case "1":
+                    Console.WriteLine("This Menu is Empty");
+                    break;
+                case "q":
+                    canContinue = false;
+                    break;
+                default:
+                    break;
+            }
+        }
+        private void WorkingWithDatesMenu()
+        {
+            Console.Clear();
+            Console.WriteLine("This menu is empty press enter to go back or \"q\" to exit");
+            switch (Console.ReadLine())
+            {
+                case "1":
+                    Console.WriteLine("This Menu is Empty");
+                    break;
+                case "q":
+                    canContinue = false;
+                    break;
+                default:
+                    break;
+            }
+        }
+        private void WorkingWithTextMenu()
+        {
+            Console.Clear();
+            Console.WriteLine("This menu is empty press enter to go back or \"q\" to exit");
+            switch (Console.ReadLine())
+            {
+                case "1":
+                    Console.WriteLine("This Menu is Empty");
+                    break;
+                case "q":
+                    canContinue = false;
+                    break;
+                default:
+                    break;
+            }
+        }
+        private void WorkingWithFilesMenu()
+        {
+            Console.Clear();
+            Console.WriteLine("This menu is empty press enter to go back or \"q\" to exit");
+            switch (Console.ReadLine())
+            {
+                case "1":
+                    Console.WriteLine("This Menu is Empty");
                     break;
                 case "q":
                     canContinue = false;

@@ -11,8 +11,8 @@ namespace Excercises
     {
         static void Main(string[] args)
         {
-            // var exerciseHandler = new ExerciseHandler();
-            var unitsExercise = new UnitsExercise();
+            var exerciseHandler = new ExerciseHandler();
+            // var unitsExercise = new UnitsExercise();
 
             // Environment.Exit(0);
         }
