@@ -48,6 +48,8 @@
     <Compile Include="Exercises\ExerciseHandler.cs" />
     <Compile Include="Exercises\Units.cs" />
     <Compile Include="Exercises\WorkingWithDates.cs" />
+    <Compile Include="Exercises\WorkingWithFiles.cs" />
+    <Compile Include="Exercises\WorkingWithText.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
