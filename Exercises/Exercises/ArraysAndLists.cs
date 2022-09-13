@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace Exercises.Exercises
 {
@@ -14,6 +10,7 @@ namespace Exercises.Exercises
         {
             //Exercise 1, Write a program and continuously ask the user to enter different names, until the user presses Enter (without supplying a name).
             //Then display a message based on the names provided based on the patern provided by the exercise documentation.
+
             var friends = new List<string>();
             while (true)
             {
@@ -41,6 +38,7 @@ namespace Exercises.Exercises
         static public void ExerciseTwo()
         {
             //Exercise 2, Write a program that asks a user's name and stores it in an array, Use the array to reverse the name and display it revesed.
+
             Console.Clear();
             Console.WriteLine("Enter your Name: ");
             var input = Console.ReadLine();
@@ -55,6 +53,7 @@ namespace Exercises.Exercises
         {
             //Exercise 3, Write a program that asks the user to enter 5 numbers, If a number has been previously entered, display an error message and ask the user to re-try
             //once all numbers have been successfully entered, display them on the console.
+
             var i = 5;
             var numbers = new List<int>();
             while (i > 0)
@@ -78,8 +77,9 @@ namespace Exercises.Exercises
         }
 
         static public void ExerciseFour()
-        {//Ecercise 4, Write a program and ask the user to continuously enter a number or type "Quit" to exit. The list of numbers may include duplicates.
-         //Display the unique numbers that the user has entered.
+        {
+            //Ecercise 4, Write a program and ask the user to continuously enter a number or type "Quit" to exit. The list of numbers may include duplicates.
+            //Display the unique numbers that the user has entered.
 
             var numbers = new List<int>();
             while (true)
@@ -99,9 +99,10 @@ namespace Exercises.Exercises
         }
 
         static public void ExerciseFive()
-        //Write a program and ask the user to supply a list of comma separated numbers (e.g 5, 1, 9, 2, 10).
-        //If the list is empty or includes less than 5 numbers, display "Invalid List" and ask the user to re-try; otherwise, display the 3 smallest numbers in the list.
         {
+            //Write a program and ask the user to supply a list of comma separated numbers (e.g 5, 1, 9, 2, 10).
+            //If the list is empty or includes less than 5 numbers, display "Invalid List" and ask the user to re-try; otherwise, display the 3 smallest numbers in the list.
+
             int[] numbers;
             while (true)
             {

@@ -54,7 +54,7 @@ namespace Exercises.Exercises
         private void ControlFlowMenu()
         {
             Console.Clear();
-            Console.WriteLine("Choose an Excercise Number between 1 and 9, enter to go back, or \"q\" to quit");
+            Console.WriteLine("Choose an Exercise Number between 1 and 9, enter to go back, or \"q\" to quit");
             switch (Console.ReadLine())
             {
                 case "1":
@@ -94,7 +94,7 @@ namespace Exercises.Exercises
         private void ArraysAndListsMenu()
         {
             Console.Clear();
-            Console.WriteLine("Choose an Excercise Number between 1 and 5, enter to go back or \"q\" to exit");
+            Console.WriteLine("Choose an Exercise Number between 1 and 5, enter to go back or \"q\" to exit");
             switch (Console.ReadLine())
             {
                 case "1":
@@ -122,11 +122,14 @@ namespace Exercises.Exercises
         private void WorkingWithDatesMenu()
         {
             Console.Clear();
-            Console.WriteLine("This menu is empty press enter to go back or \"q\" to exit");
+            Console.WriteLine("Choose an Exercise Number between 1 and 2 or press enter to go back or \"q\" to exit");
             switch (Console.ReadLine())
             {
                 case "1":
-                    Console.WriteLine("This Menu is Empty");
+                    WorkingWithDates.DateTimeExersise();
+                    break;
+                case "2":
+                    WorkingWithDates.TimeSpanExercise();
                     break;
                 case "q":
                     canContinue = false;
@@ -138,11 +141,23 @@ namespace Exercises.Exercises
         private void WorkingWithTextMenu()
         {
             Console.Clear();
-            Console.WriteLine("This menu is empty press enter to go back or \"q\" to exit");
+            Console.WriteLine("Choose and Exercise Number between 1 and 5 or press enter to go back or \"q\" to exit");
             switch (Console.ReadLine())
             {
                 case "1":
-                    Console.WriteLine("This Menu is Empty");
+                    WorkingWithText.ExerciseOne();
+                    break;
+                case "2":
+                    WorkingWithText.ExerciseTwo();
+                    break;
+                case "3":
+                    WorkingWithText.ExerciseThree();
+                    break;
+                case "4":
+                    WorkingWithText.ExerciseFour();
+                    break;
+                case "5":
+                    WorkingWithText.ExerciseFive();
                     break;
                 case "q":
                     canContinue = false;
