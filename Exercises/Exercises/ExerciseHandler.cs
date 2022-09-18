@@ -169,11 +169,14 @@ namespace Exercises.Exercises
         private void WorkingWithFilesMenu()
         {
             Console.Clear();
-            Console.WriteLine("This menu is empty press enter to go back or \"q\" to exit");
+            Console.WriteLine("Choose an Exercise Number between 1 and 2, enter to go back or \"q\" to exit");
             switch (Console.ReadLine())
             {
                 case "1":
-                    Console.WriteLine("This Menu is Empty");
+                    WorkingWithFiles.ExerciseOne();
+                    break;
+                case "2":
+                    WorkingWithFiles.ExerciseTwo();
                     break;
                 case "q":
                     canContinue = false;
