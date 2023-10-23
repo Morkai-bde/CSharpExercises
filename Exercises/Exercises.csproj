@@ -43,19 +43,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exercises\ArraysAndLists.cs" />
-    <Compile Include="Exercises\ControlFlow.cs" />
+    <Compile Include="Exercises\Advanced\AdvancedMenu.cs" />
+    <Compile Include="Exercises\Lita.cs" />
+    <Compile Include="Exercises\Intermediate\Calculator.cs" />
+    <Compile Include="Exercises\Intermediate\Classes.cs" />
+    <Compile Include="Exercises\Basic\ArraysAndLists.cs" />
+    <Compile Include="Exercises\Basic\BasicMenu.cs" />
+    <Compile Include="Exercises\Basic\ControlFlow.cs" />
     <Compile Include="Exercises\ExerciseHandler.cs" />
+    <Compile Include="Exercises\Intermediate\Customer.cs" />
+    <Compile Include="Exercises\Intermediate\IntermediateMenu.cs" />
+    <Compile Include="Exercises\Intermediate\Order.cs" />
+    <Compile Include="Exercises\Intermediate\Point.cs" />
+    <Compile Include="Exercises\Intermediate\Stopwatch.cs" />
     <Compile Include="Exercises\Units.cs" />
-    <Compile Include="Exercises\WorkingWithDates.cs" />
-    <Compile Include="Exercises\WorkingWithFiles.cs" />
-    <Compile Include="Exercises\WorkingWithText.cs" />
+    <Compile Include="Exercises\Basic\WorkingWithDates.cs" />
+    <Compile Include="Exercises\Basic\WorkingWithFiles.cs" />
+    <Compile Include="Exercises\Basic\WorkingWithText.cs" />
+    <Compile Include="Exercises\Intermediate\Person.cs" />
+    <Compile Include="Exercises\Intermediate\HttpCookies.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <Compile Include="StringUtility.cs" />
+    <Compile Include="Exercises\Basic\StringUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Intermediate\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

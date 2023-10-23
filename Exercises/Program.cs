@@ -1,20 +1,46 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Exercises.Exercises;
 
-namespace Excercises
+namespace Exercises
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            var exerciseHandler = new ExerciseHandler();
+            
+            var lita = new Lita();
+
+            // var exerciseHandler = new ExerciseHandler();
             // var unitsExercise = new UnitsExercise();
 
-            // Environment.Exit(0);
+            //        var t = new Test();
+            //        t.Name = "Shaun";
+            //        Console.WriteLine("Name: {0}", t.Name);
+            //        t.Name = " ";
+            //        Console.WriteLine("Name: {0}", t.Name);
+
+
+            //    }
+            //}
+            //internal class Test
+            //{
+            //    private string name;
+            //    public string Name
+            //    {
+            //        get
+            //        {
+            //            return this.name + " Butler";
+            //        }
+            //        set
+            //        {
+            //            this.name = value;
+            //        }
         }
+
+        //    public string GetName()
+    //        { return this.name; }
+
     }
 }

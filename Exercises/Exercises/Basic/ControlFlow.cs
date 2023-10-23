@@ -13,7 +13,7 @@ namespace Exercises.Exercises
             Console.WriteLine("This Excercise verifies if the number entered is Valid or Invalid");
             Console.WriteLine();
             Console.WriteLine("Please enter a number between 1 and 10");
-            int input = Convert.ToInt32(Console.ReadLine());
+            var input = Convert.ToInt32(Console.ReadLine());
             Console.Clear();
             if (input < 1 || input > 10)
                 Console.WriteLine("Invalid Number");
@@ -21,6 +21,7 @@ namespace Exercises.Exercises
                 Console.WriteLine("Valid Number");
             Console.ReadKey();
         }
+
         static public void ExerciseTwo()
         {
             //Exercise 2, Write a program that takes two numbers form the console and displays the maximum of the two
@@ -40,6 +41,7 @@ namespace Exercises.Exercises
                 Console.WriteLine(numberTwo + " Is the larger number");
             Console.ReadKey();
         }
+
         static public void ExerciseThree()
         {
             //Exercise 3, Write a program that takes the hight and width of an image and tells if it landscape or portrait
@@ -61,13 +63,15 @@ namespace Exercises.Exercises
                 Console.WriteLine("The image is Square");
             Console.ReadKey();
         }
+
         static public void ExerciseFour()
         {
             //Excercise 4, Write a program that takes a speed limit, then asks for the speed of a car, if the car is going slower than the speed limit, write ok
             //if the car is going over the speed limit, give 1 demerit point for each 5km.h above the speed limit, if more than 12, display License Suspended.
 
             Console.Clear();
-            Console.WriteLine("This Excercise Displayes Ok, Number of Demerit Points, or License Suspended Depending on values entered");
+            Console.WriteLine(
+                "This Excercise Displayes Ok, Number of Demerit Points, or License Suspended Depending on values entered");
             Console.WriteLine();
             Console.WriteLine("Please enter a speed limit");
             int speedLimit = Convert.ToInt32(Console.ReadLine());
@@ -84,6 +88,7 @@ namespace Exercises.Exercises
                 Console.WriteLine("License Suspended");
             Console.ReadKey();
         }
+
         static public void ExerciseFive()
         {
             // Exercise 5, Write a program to count how many numbers between 1 and 100 are divisible by 3 with no remainder, then display the count on the console.
@@ -92,11 +97,12 @@ namespace Exercises.Exercises
             var count = 0;
             for (var i = 1; i <= 100; i++)
             {
-                if (i%3 == 0)
+                if (i % 3 == 0)
                 {
                     count++;
                 }
             }
+
             Console.WriteLine(count);
             Console.ReadKey();
         }
@@ -116,11 +122,14 @@ namespace Exercises.Exercises
                 {
                     break;
                 }
+
                 count += Convert.ToInt32(input);
             }
+
             Console.WriteLine(count);
             Console.ReadKey();
         }
+
         static public void ExerciseSeven()
         {
             // Excercise 7, Write a program and ask the user to enter a number. Compute the factorial of the number and print it on the console.
@@ -133,9 +142,11 @@ namespace Exercises.Exercises
             {
                 factorial *= i;
             }
+
             Console.WriteLine(factorial);
             Console.ReadKey();
         }
+
         static public void ExerciseEight()
         {
             //Write a program that picks a random number between 1 and 10. Give the user 4 chances to guess the number. If the user guesses the number, display “You won";
@@ -144,11 +155,12 @@ namespace Exercises.Exercises
             Console.WriteLine();
             Random rnd = new Random();
             var count = 4;
-            var secretNo = rnd.Next(1,10);
+            var secretNo = rnd.Next(1, 10);
             while (true)
             {
                 Console.Clear();
-                Console.WriteLine("A random number between 1 and 10 has been generated, you have " + (0 + count) + " guesses.");
+                Console.WriteLine("A random number between 1 and 10 has been generated, you have " + (0 + count) +
+                                  " guesses.");
                 var input = Console.ReadLine();
                 if (Convert.ToInt32(input) == secretNo)
                 {
@@ -156,10 +168,12 @@ namespace Exercises.Exercises
                     Console.WriteLine("Well done, You guessed the correct number");
                     break;
                 }
+
                 if (Convert.ToInt32(input) != secretNo)
                 {
                     count--;
                 }
+
                 if (count == 0)
                 {
                     Console.Clear();
@@ -167,8 +181,10 @@ namespace Exercises.Exercises
                     break;
                 }
             }
+
             Console.ReadKey();
         }
+
         static public void ExerciseNine()
         {
             // Write a program and ask the user to enter a series of numbers separated by comma. Find the maximum of the numbers and display it on the console.
@@ -180,7 +196,6 @@ namespace Exercises.Exercises
             var numberList = input.Split(',');
             Console.WriteLine("The highest number is: " + numberList.Max());
             Console.ReadKey();
-
         }
     }
 }
